@@ -1,35 +1,29 @@
 {
-  "name": "techno",
-  "private": true,
-  "version": "0.0.0",
+  "name": "bitguard-backend",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "dependencies": {
-    "axios": "^1.15.0",
-    "chart.js": "^4.5.1",
-    "lucide-react": "^1.8.0",
-    "react": "^19.2.4",
-    "react-chartjs-2": "^5.3.1",
-    "react-dom": "^19.2.4",
-    "react-router-dom": "^7.14.1",
-    "zustand": "^5.0.12"
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.7.2",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.3.2",
+    "fuse.js": "^7.3.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.4.1",
+    "nodemailer": "^8.0.5",
+    "resend": "^6.12.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.4",
-    "@tailwindcss/vite": "^4.2.2",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "eslint": "^9.39.4",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.4.0",
-    "tailwindcss": "^4.2.2",
-    "vite": "^8.0.4"
+    "nodemon": "^3.1.4"
   }
 }
